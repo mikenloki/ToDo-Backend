@@ -17,7 +17,7 @@ class Tasks extends Migration
         $table->increments('id');
         $table->string('taskContent');
         $table->timestamps();
-      })
+      });
     }
 
     /**

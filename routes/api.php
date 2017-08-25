@@ -13,4 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('getTasks', 'TasksController@index');
+Route::get('showTask/{id}', 'TasksController@show');
+Route::post('storeTask', 'TasksController@store');
+
 Route::any('{path?}', 'MainController@index')->where("path", ".+");
